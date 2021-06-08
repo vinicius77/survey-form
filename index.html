@@ -5,7 +5,84 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="./style.css" />
-    <title>Document</title>
+    <title>Survey Form</title>
   </head>
-  <body></body>
+  <body>
+    <div id="root">
+      <header id="header">
+        <h1 id="title">Survey Form</h1>
+        <p id="description">This is an example survey</p>
+      </header>
+      <form action="" id="survey-form">
+        <div id="form-control">
+          <label for="name" id="name-label">Name</label>
+          <input type="text" name="name" id="name" placeholder="E.g. John" />
+        </div>
+        <div id="form-control">
+          <label for="email" id="email-label">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="example@email.com"
+          />
+        </div>
+        <div id="form-control">
+          <label for="number" id="number-label">Rate 1 to 5</label>
+          <input
+            type="number"
+            name="number"
+            id="number"
+            min="1"
+            max="5"
+            placeholder="4"
+          />
+        </div>
+
+        <select name="Ubuntu Versions" id="dropdown">
+          <option value="focal fossa">Focal Fossa</option>
+          <option value="groovy gorilla">Groovy Gorilla</option>
+          <option value="hirsute hippo">Hirsute Hippo</option>
+          <option value="impish indri">Impish Indri</option>
+        </select>
+        <div id="form-control">
+          <label for="male">Male</label>
+          <input type="radio" name="gender" value="male" />
+          <label for="female">Female</label>
+          <input type="radio" name="gender" value="female" />
+        </div>
+
+        <fieldset>
+          <legend>What is Your Favorite Player?</legend>
+          <input
+            type="checkbox"
+            name="favorite_player"
+            value="Rivaldo"
+            checked
+          />Rivaldo<br />
+          <input
+            type="checkbox"
+            name="favorite_player"
+            value="Ronaldo"
+          />Ronaldo<br />
+          <input
+            type="checkbox"
+            name="favorite_player"
+            value="Ronaldinho"
+          />Ronaldinho<br />
+        </fieldset>
+        <div id="form-control">
+          <label for="comments">Comments:</label>
+          <textarea
+            name="comments"
+            id="comments"
+            cols="30"
+            rows="10"
+            placeholder="Your thoughts"
+          ></textarea>
+        </div>
+        <button type="submit">Send</button>
+      </form>
+    </div>
+  </body>
 </html>
