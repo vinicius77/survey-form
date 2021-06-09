@@ -1,1 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400&display=swap');
 
+:root {
+  --blue-twitter: #00aced;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+  align-content: center;
+  max-width: 500px;
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05)),
+    url('./assets/drawings-background.jpg');
+  background-repeat: repeat;
+  color: var(--blue-twitter);
+}
+
+body div#root {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 0px 20px;
+  margin: 15px 0;
+  border-radius: 12px;
+  font-weight: 600;
+  line-height: 30px;
+}
+
+div#root header h1 {
+  font-size: 40px;
+  margin: 20px 0 30px 0;
+  letter-spacing: 5px;
+  display: flex;
+  justify-content: space-around;
+}
+
+div#root form#survey-form {
+  display: flex;
+  flex-direction: column;
+}
+
+div#root form button {
+  background-color: var(--blue-twitter);
+  color: white;
+  font-weight: 600;
+  font-size: 15px;
+  letter-spacing: 2px;
+  border: none;
+  padding: 10px 20px;
+  margin: 4px 0px 20px 0px;
+  border-radius: 12px;
+  width: 50%;
+  margin-left: auto;
+  cursor: pointer;
+}
